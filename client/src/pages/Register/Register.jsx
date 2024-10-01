@@ -3,6 +3,7 @@ import "./register.css";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import newRequest from "../../utils/newRequest";
 
 const Register = () => {
   const [credentials, setCredentials] = useState({
@@ -25,7 +26,7 @@ const Register = () => {
     e.preventDefault();
     dispatch({ type: "REGISTER_START" }); // Dispatch start action
     try {
-      const res = await axios.post("/auth/register", credentials);
+      const res = await newRequest.post("/auth/register", credentials);
       dispatch({ type: "REGISTER_SUCCESS", payload: res.data.details }); // Dispatch success action
       navigate("/login"); 
     } catch (err) {

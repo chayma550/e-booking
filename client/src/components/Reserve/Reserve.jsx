@@ -7,6 +7,7 @@ import { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../context/SearchContext";
+import newRequest from "../../utils/newRequest";
 
 const Reserve = ({ setOpen, hotelId }) => {
   const [selectedRooms, setSelectedRooms] = useState([]);
@@ -55,7 +56,7 @@ const Reserve = ({ setOpen, hotelId }) => {
     try {
       await Promise.all(
         selectedRooms.map((roomId) => {
-          const res = axios.put(`/rooms/availability/${roomId}`, {
+          const res = newRequest.put(`/rooms/availability/${roomId}`, {
             dates: alldates,
           });
           return res.data;
