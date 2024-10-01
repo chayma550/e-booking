@@ -3,8 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
- 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+  url("https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center; 
 }
 .lContainer {
   display: flex;

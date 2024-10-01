@@ -16,8 +16,12 @@ import { AuthContext } from '../../context/AuthContext'
 
                       ) : (
           <div className="navItems">
+            <Link to="/register">
             <button className="navButton">Register</button>
-            <button className="navButton">Login</button>
+            </Link>
+           <Link to="/login">
+           <button className="navButton">Login</button>
+           </Link>
           </div>
         )}
                   

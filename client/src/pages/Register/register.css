@@ -1,0 +1,45 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    url("https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  }
+  .rContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+    z-index: 1;
+    width: 30%;
+
+    
+  }
+  
+  .lInput{
+    height: 50px;
+    padding: 10px;
+  }
+  
+  .lButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+  }
+  
+  
+  
+  

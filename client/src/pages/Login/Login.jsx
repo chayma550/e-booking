@@ -3,7 +3,7 @@ import axios from "axios";
 import "./login.css";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -11,7 +11,7 @@ const Login = () => {
     password: undefined,
   });
 
-  const {user,loading,error,dispatch}=useContext(AuthContext);
+  const {loading,error,dispatch}=useContext(AuthContext);
   const navigate=useNavigate();
   const handleChange=(e)=>{
     setCredentials((prev)=>({...prev,[e.target.id]:e.target.value}))
@@ -52,6 +52,9 @@ const Login = () => {
           Login
         </button>
         {error && <span>{error.message}</span>}
+        <Link to="/register">
+        <button style={{background:"none",border:"none",fontWeight:"600",fontSize:"12px"}}>Create Profile</button>
+        </Link>
       </div>
       </div>
    
