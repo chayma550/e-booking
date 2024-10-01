@@ -1,0 +1,90 @@
+.listContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.listWrapper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap:20px;   
+}
+
+.listSearch{
+flex:1;
+background-color: #febb02;
+border-radius: 10px;
+padding: 10px;
+position: sticky;
+top:10px;
+text-align: left;
+height: max-content;
+}
+.lsTitle{
+ color: #555;
+ font-size: 20px;
+ margin-bottom: 10px;
+ font-weight: bold;
+}
+
+.lsItem{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin-bottom: 10px;
+}
+
+.lsItem>label{
+    font-size: 12px;
+}
+.lsItem>input{
+    height: 30px;
+    border:none;
+    padding: 5px;
+}
+.lsItem>span{
+    display: flex;
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+.listResult{
+    flex:3;
+}
+
+.lsOption{
+    padding: 10px;
+}
+.lsOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+}
+.lsOptionItem>input{
+    width: 50px;
+}
+.lsOptionBtn{
+    border: none;
+    padding: 10px;
+   background-color:#0071c2;
+    color:white;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+
+}
+.Searchbutton {
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    right: 0px;
+  }
